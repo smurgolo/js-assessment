@@ -7,7 +7,8 @@ define(function() {
     },
 
     speak : function(fn, obj) {    
-
+        obj.func = fn;
+        return obj.func();
     },
 
     functionFunction : function(str) {
@@ -61,7 +62,8 @@ define(function() {
     },
 
     curryIt : function(fn) {
-
+      
+        
     }
   };
 });
